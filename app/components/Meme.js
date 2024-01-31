@@ -1,4 +1,5 @@
 'use client';
+import { Style } from '@mui/icons-material';
 import 'photoswipe/dist/photoswipe.css'
 
 import { Gallery, Item } from 'react-photoswipe-gallery'
@@ -21,7 +22,7 @@ const MyGallery = ({meme}) => (
         height="768"
       >
         {({ ref, open }) => ( 
-          <img ref={ref} onClick={open} src={meme.data.url} />
+          <img ref={ref} onClick={open} src={meme.data.url} style = {{padding : 10}}/>
         )}
       </Item>
     </Gallery>
